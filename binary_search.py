@@ -1,12 +1,13 @@
 """ Python implementation of binary search algorithm and other trivia"""
+
 import sys
 import timeit
 
 
-def binary_search(arr: list | tuple, searched_item: int) -> None:
+def binary_search(arr: list | tuple, searched_item: int) -> int | None:
     """
     Binary search returns the position (index) of an item in an ordered array.
-    It takes O(log n) time (log time).
+    It takes O(log n) time ("log time").
 
     @param arr: an ordered array
     @param searched_item: the item which position (index) we are looking for
@@ -21,13 +22,13 @@ def binary_search(arr: list | tuple, searched_item: int) -> None:
         mid = (low + high) // 2
         my_guess = arr[mid]
         if my_guess == searched_item:
-            print(f"The item you were looking for is at index: {mid}!")
-        if my_guess > searched_item:
+            return mid
+        elif my_guess > searched_item:
             high = mid - 1
         else:
             low = mid + 1
-        #to-do: how to get this printed correctly?
-        print("The item you're looking for doesn't exist!")
+    # searched_item doesn't exist in the given array
+    return None
 
 
 my_list = list(range(1, 146100))
@@ -50,5 +51,6 @@ tuple_end_time = timeit.default_timer()
 tuple_elapsed_time = tuple_end_time - tuple_start_time
 print(f"Runtime of binary search for a tuple is: {tuple_elapsed_time}")
 
+print(binary_search(my_list, 1235))
 print(binary_search(my_list, 654775))
 print(binary_search(my_tuple, 5))
