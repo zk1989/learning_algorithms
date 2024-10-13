@@ -1,8 +1,9 @@
-"""Python implementation of selection sort algorithm"""
+""" Python implementation of selection sort algorithm """
 
 
 def find_index_of_lowest_number(arr: list | tuple) -> int:
-    """Takes first item from the list and compares it against all other items to establish the lowest number
+    """
+    Takes 1st item from the list and compares it against all other items to establish the lowest number
 
     @param arr: an unordered array
     @return: an index of the lowest number from arr

@@ -57,3 +57,16 @@ This can occur in different scenarios especially when a function keeps calling i
 
 ### Why is there no IndexError for x[1:] when x=[]?
 https://stackoverflow.com/questions/70456783/why-is-there-no-indexerror-thrown-and-why-the-output-is-an-empty-list-when-the-i
+
+## Chapter 6
+
+### What is a double-ended queue?
+It means that an element can be inserted or removed from both ends of the queue, unlike the other queues in which it can be done only from one end. Because of this property, it may not obey the First In First Out property. Deque (Doubly Ended Queue) in Python is implemented using the module “collections“. Deque is preferred over a list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to a list that provides O(n) time complexity
+(Source: https://www.geeksforgeeks.org/deque-in-python/)
+
+### It appears that algorithms can be divided: 
+by their purpose: there are search algorithms, sorting algorithms,
+on what sort of data structure they can be run on: graph algorithms.
+
+### What is a topological sort?
+It's a way to make an ordered list out of a graph.

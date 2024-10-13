@@ -1,4 +1,4 @@
-""" Python implementation of binary search algorithm and other trivia"""
+""" Python implementation of binary search algorithm and other trivia """
 
 import sys
 import timeit
@@ -11,7 +11,7 @@ def binary_search(arr: list | tuple, searched_item: int) -> int | None:
 
     @param arr: an ordered array
     @param searched_item: the item which position (index) we are looking for
-    @return: the position (index) of a searched item
+    @return: the position (index) of a searched item if it exists in the given array
     """
 
     # low and high together form a range of indices we are searching through
@@ -20,10 +20,10 @@ def binary_search(arr: list | tuple, searched_item: int) -> int | None:
 
     while low <= high:
         mid = (low + high) // 2
-        my_guess = arr[mid]
-        if my_guess == searched_item:
+        guessed_item = arr[mid]
+        if guessed_item == searched_item:
             return mid
-        elif my_guess > searched_item:
+        elif guessed_item > searched_item:
             high = mid - 1
         else:
             low = mid + 1
@@ -51,6 +51,6 @@ tuple_end_time = timeit.default_timer()
 tuple_elapsed_time = tuple_end_time - tuple_start_time
 print(f"Runtime of binary search for a tuple is: {tuple_elapsed_time}")
 
-print(binary_search(my_list, 1235))
-print(binary_search(my_list, 654775))
-print(binary_search(my_tuple, 5))
+print("Index for searched item 1235 in a list is:", binary_search(my_list, 1235))
+print("When searched item is out of range result is:", binary_search(my_list, 654775))
+print("Index for searched item 5 in a tuple is:", binary_search(my_tuple, 5))
