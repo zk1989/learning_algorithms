@@ -1,7 +1,10 @@
+Initially this repo was meant to record my progress while going through the "Grokking Algorithms", but in the process it's expanded to include stuff beyond the book's content. All comments in the files are mine, I also renamed some variables and made sure the code is correct. Unless stated otherwise, core of the code snippets comes from the book.
+
 # Grokking Algorithms (2nd edition, 2024)
 
 > **NOTE:** I do NOT recommend this book. 
-> It turned out to be full of mistakes that I list in a separate .md file.
+> It turned out to be full of mistakes, mostly regarding code.
+> It includes multitude of repetitions and blank pages, just in order to make it look larger.
 > I learned more by hunting those mistakes rather than reading the book.
 
 These are the questions I asked myself while reading _Grokking Algorithms_. 
@@ -64,9 +67,15 @@ https://stackoverflow.com/questions/70456783/why-is-there-no-indexerror-thrown-a
 It means that an element can be inserted or removed from both ends of the queue, unlike the other queues in which it can be done only from one end. Because of this property, it may not obey the First In First Out property. Deque (Doubly Ended Queue) in Python is implemented using the module “collections“. Deque is preferred over a list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to a list that provides O(n) time complexity
 (Source: https://www.geeksforgeeks.org/deque-in-python/)
 
-### It appears that algorithms can be divided: 
+### It appears that algorithms can be divided. How?
 by their purpose: there are search algorithms, sorting algorithms,
 on what sort of data structure they can be run on: graph algorithms.
 
-### What is a topological sort?
+### What is a topological sorting?
 It's a way to make an ordered list out of a graph.
+
+## Chapter 8
+
+### What does AVL in AVL trees stand for?
+The AVL tree is named after its inventors: Adelson-Velsky and Landis.
+(Source: https://en.wikipedia.org/wiki/AVL_tree)

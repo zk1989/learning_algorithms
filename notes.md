@@ -15,3 +15,4 @@ https://waxworksmath.com/Authors/A_F/Bhargava/WriteUp/Weatherwax_Bhargava_Soluti
 
 def max - you will get index errors for base cases 0 or 1
 
+chapter 5 answers has further exercises, without answers this time...

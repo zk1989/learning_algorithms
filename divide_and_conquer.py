@@ -69,20 +69,3 @@ print(find_highest_number([91, 8, 4, 3, 1, 90]))
 print(find_highest_number([8, 4, 31, 1]))
 print(find_highest_number([6]))
 print(find_highest_number([]))
-
-def recursive_binary_search(arr, searched_item) -> int:
-    """
-    It is supposed to find an index of the searched item.
-    """
-    # base case
-    if len(arr) == 0:
-        return 0
-    # another base case
-    elif len(arr) == 1:
-        return arr[0]
-    else:
-        low = 0
-        high = len(arr)
-        mid = (low + high) // 2
-        guessed_item = arr[mid]
-        
