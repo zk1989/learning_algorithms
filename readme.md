@@ -1,4 +1,4 @@
-Initially this repo was meant to record my progress while going through the "Grokking Algorithms", but in the process it's expanded to include stuff beyond the book's content. All comments in the files are mine, I also renamed some variables and made sure the code is correct. Unless stated otherwise, core of the code snippets comes from the book.
+Initially this repo was meant to record my progress while going through the "Grokking Algorithms", but in the process it's expanded to include stuff beyond the book's content. All comments in the files are mine. I also renamed some variables to make them more descriptive and made sure the code is correct. Unless stated otherwise, core of the code snippets comes from the book.
 
 # Grokking Algorithms (2nd edition, 2024)
 
@@ -18,6 +18,8 @@ I have a Python background therefore most questions use Python for better unders
 (Source: https://dictionary.cambridge.org/dictionary/english/binary)
 
 ### What is an algorithm?
+Even a simple Python function is already an algorithm. So it's a way of reaching the desired output, given
+some input - a step-by-step procedure to perform some computation or solve a problem.
 
 ### Introduction to logarithms
 https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-intro/v/logarithms
@@ -79,3 +81,18 @@ It's a way to make an ordered list out of a graph.
 ### What does AVL in AVL trees stand for?
 The AVL tree is named after its inventors: Adelson-Velsky and Landis.
 (Source: https://en.wikipedia.org/wiki/AVL_tree)
+
+## Chapter 9
+
+### What are heaps vs queues vs priority queues?
+Heaps are represented as binary tree and the element with the highest priority (or maximum) is always the root.
+https://anmolsehgal.medium.com/heap-vs-priority-queues-vs-queues-b03398312c87
+
+## Chapter 10
+
+### Why things are called "greedy" in programming?
+Greedy in regex means it will consume as much as possible, match the longest possible string.
+Lazy regex stifles greedy regex.
+(Source: https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions)
+In algorithms, the term "greedy" reflects the algorithm's approach of selecting the best available option at the moment without considering the overall consequences or future implications of that choice.
+(Source: https://www.quora.com/Why-are-greedy-algorithms-termed-as-such)
