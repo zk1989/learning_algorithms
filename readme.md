@@ -1,4 +1,4 @@
-Initially this repo was meant to record my progress while going through the "Grokking Algorithms", but in the process it's expanded to include stuff beyond the book's content. All comments in the files are mine. I also renamed some variables to make them more descriptive and made sure the code is correct. Unless stated otherwise, core of the code snippets comes from the book.
+Initially this repo was meant to record my progress while going through the _Grokking Algorithms_ book, but in the process it's expanded to include stuff beyond the book's content. All comments in the files are mine. I also renamed some variables to make them more descriptive and made sure the code is correct. Unless stated otherwise, core of the code snippets comes from the book.
 
 # Grokking Algorithms (2nd edition, 2024)
 
@@ -7,8 +7,8 @@ Initially this repo was meant to record my progress while going through the "Gro
 > It includes multitude of repetitions and blank pages, just in order to make it look larger.
 > I learned more by hunting those mistakes rather than reading the book.
 
-These are the questions I asked myself while reading _Grokking Algorithms_. 
-I have a Python background therefore most questions use Python for better understanding.
+These are the questions I asked myself while reading. 
+I have Python background therefore most of the time I use Python for better understanding.
 
 # Chapter 1
 
@@ -35,6 +35,7 @@ Under some specific circumstances you might be able to use it as a “makeshift�
 ### What kind of arrays are there in Python?
 Lists and tuples both belong to a class of data structures called arrays.
 (Source: https://www.oreilly.com/library/view/high-performance-python/9781449361747/ch03.html#:~:text=Lists%20and%20tuples%20are%20a,data%20with%20some%20intrinsic%20ordering)
+In Python, the term "array" can refer to a specific data structure (from the array module), but many people commonly use "array" to refer to lists or other sequence types.
 
 ### What does it mean that Python's list type is a dynamic array?
 It means that it would typically over-allocate their backing store slightly to speed up element insertions in the average case, 
@@ -69,9 +70,10 @@ https://stackoverflow.com/questions/70456783/why-is-there-no-indexerror-thrown-a
 It means that an element can be inserted or removed from both ends of the queue, unlike the other queues in which it can be done only from one end. Because of this property, it may not obey the First In First Out property. Deque (Doubly Ended Queue) in Python is implemented using the module “collections“. Deque is preferred over a list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to a list that provides O(n) time complexity
 (Source: https://www.geeksforgeeks.org/deque-in-python/)
 
-### It appears that algorithms can be divided. How?
-by their purpose: there are search algorithms, sorting algorithms,
-on what sort of data structure they can be run on: graph algorithms.
+### It appears that algorithms can be categorized. How?
+By their purpose (searching, sorting, but the purposes can be infinite) or based on what sort of data structure they can be run on (graphs, arrarys).
+But generally there's no such classification, at least not one which would be agreed upon.
+(Source: https://stackoverflow.com/questions/4420671/how-can-we-classify-various-algorithms)
 
 ### What is a topological sorting?
 It's a way to make an ordered list out of a graph.
@@ -96,3 +98,6 @@ Lazy regex stifles greedy regex.
 (Source: https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions)
 In algorithms, the term "greedy" reflects the algorithm's approach of selecting the best available option at the moment without considering the overall consequences or future implications of that choice.
 (Source: https://www.quora.com/Why-are-greedy-algorithms-termed-as-such)
+
+### Give me time complexity cheat sheet
+https://dev.to/somadevtoo/big-o-notations-cheatsheet-with-explanation-i2h
